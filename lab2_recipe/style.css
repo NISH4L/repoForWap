@@ -1,0 +1,36 @@
+body{
+	background: cyan;
+}
+
+#container{
+	width:auto;
+}
+
+#left{
+	float:left;
+	width:30%;
+}
+
+/*#right{
+	margin:0 auto;
+	width:100%;
+}*/
+
+
+figcaption{
+	font-family: palatino;
+}
+
+#text1{
+	float:left;
+	width:30%;
+}
+
+/*#text2{
+	margin: 0 auto;
+	width:100%;
+}*/
+
+
+
+
