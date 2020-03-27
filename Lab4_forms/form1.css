@@ -1,0 +1,45 @@
+.center {
+    margin:auto;
+    margin-top:200px;
+    width:400px;
+    padding: 30px;
+    text-align: center;
+    background: white;
+    border-width: 40px;
+    border-radius: 12px;
+
+}
+
+p {
+    color:grey;
+}
+
+label {
+    size: 30px;
+}
+
+input.texts{
+    width:200px;
+    height:20px;
+    font-size: 1.2em;
+}
+
+
+label.texts{
+    font-size: 1.5em;
+    font-family: AppleGothic;
+
+}
+
+input.button{
+    background-color: royalblue;
+    font-family: AppleGothic;
+    font-size: 1.2em;
+    color:white;
+    padding-left:15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+

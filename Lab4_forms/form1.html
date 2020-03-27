@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form1</title>
+    <link href="form1.css" type="text/css" rel="stylesheet">
+</head>
+<body bgcolor="grey">
+<div class="center">
+    <form method="GET" action="form1.css">
+        <label for="email" class="texts">Email address:</label><br />
+        <input class="texts" type="text" id="email" name="email" placeholder="Enter email" minlength="7"><br />
+        <p>We'll never share your email with anyone else.</p>
+        <label for="pass" class="texts">Password:</label><br />
+        <input type="password"  class="texts" id="pass" name="pass" placeholder="Password" minlength="10" pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]">
+        <br />
+        <br />
+        <!-- For URL -->
+        <label for="url" class="texts">URL:</label><br />
+        <input type="url"  class="texts" id="url" name="url" placeholder="https://example.com" pattern ="(?:http|https)://.*">
+        <!--Finish URL -->
+        <br />
+        <input type="checkbox" id="check" name="check">Check me out</form>
+        <br />
+        <input type="submit" class="button" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
