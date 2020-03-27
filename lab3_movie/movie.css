@@ -45,7 +45,7 @@ h1{
     float: left;
 }
 
-.overviewLeft .comments{
+.comments{
 	width: 47%;
     float: left;
     padding-left: 2%;
@@ -60,7 +60,7 @@ h1{
     overflow: hidden;
 }
 
-.comments .review {
+.review {
 	font-size: 8pt;
     font-weight: bold;
     background-color: #E8DC9B;
@@ -70,7 +70,7 @@ h1{
     overflow: hidden;
 }
 
-.comments .profile {
+.profile {
 	font-size: 13px;
 }
 
@@ -91,6 +91,10 @@ dl {
 
 dt {
 	font-weight: bold;
+}
+
+dd{
+	padding-bottom: 10pt;
 }
 
 .banner img{
