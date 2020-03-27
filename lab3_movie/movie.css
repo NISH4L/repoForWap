@@ -1,0 +1,111 @@
+.banner{
+	background:  url("images/bannerbg.png");
+	margin:0px;
+	padding:0px;
+}
+
+h1{
+	font-size: 24pt;
+	font-family: Tahoma, Verdana, serif;
+	text-shadow: 3px 3px #999999;
+	display:block;
+	text-align: center;
+}
+
+.container{
+	width:800px;
+	margin:auto;
+	border: 4px solid gray;
+	border-radius:20px;
+	overflow: hidden;
+}
+
+.overall{
+	width:550px;
+	background: url(images/rbg.png);
+	height:83px;
+
+}
+
+.commentsIn {
+	margin-bottom: 20pt;
+}
+
+.overviewRight{
+	float:right;
+	padding:0;
+	margin:0;
+	background-color: #A2B964;
+	width:250px;
+}
+
+.overviewLeft{
+	display: block;
+    width: 550px;
+    float: left;
+}
+
+.overviewLeft .comments{
+	width: 47%;
+    float: left;
+    padding-left: 2%;
+
+}
+
+.rate{
+	font-size: 48pt;
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.comments .review {
+	font-size: 8pt;
+    font-weight: bold;
+    background-color: #E8DC9B;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.comments .profile {
+	font-size: 13px;
+}
+
+
+body{
+	background: url("images/background.png");
+	margin:0px;
+	padding:0px;
+}
+
+dl {
+    padding: 10pt;
+    font-size: 8pt;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3em;
+}
+
+
+dt {
+	font-weight: bold;
+}
+
+.banner img{
+	display:block;
+	margin:auto;
+}
+
+.containerFooter {
+	text-align: center;
+    background-color: #A2B964;
+    padding: 5px;
+    margin: 0px;
+    clear: both;
+}
+
+.footerLinks{
+	margin:auto;
+}
