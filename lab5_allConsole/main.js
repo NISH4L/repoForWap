@@ -169,18 +169,19 @@ function printFibo(n, a, b){
 function theWatch(){
     let today = new Date();
     let y = today.getFullYear();
-    let m = today.getMonth();
-    let d = today.getDay();
+    let m = today.getMonth() + 1; //Add one because month is an array and starts from 0. Jan = 0
+    let d = today.getDate();
     let h = today.getHours();
     let n = today.getMinutes();
     let s = today.getSeconds();
 
+    m = noZero(m);
     d = noZero(d);
     n = noZero(n);
     s = noZero(s);
 
     document.getElementById("forClock").innerHTML= y + "-" + m + "-" + d + " " + h + ":" + n + ":" + s;
-    let t = setTimeout(theWatch, 1000); //refreshes in this milliseconds
+    let t = setTimeout(theWatch, 500); //refreshes in this milliseconds
 
     //Prevents the single digit in the clock
     function noZero(digit){
