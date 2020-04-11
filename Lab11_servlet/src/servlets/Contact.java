@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 @WebServlet(name = "Contact", urlPatterns = {"/contact"})
 public class Contact extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        doGet(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -34,14 +34,14 @@ public class Contact extends HttpServlet {
         sb.append("<body>");
         sb.append("<header>");
         sb.append("<nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">");
-        sb.append("<a class=\"navbar-brand\" href=\"/\">Home - Servlet</a>");
+        sb.append("<a class=\"navbar-brand\" href=\"#\">Home - Servlet</a>");
         sb.append("<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarsExampleDefault\" aria-controls=\"navbarsExampleDefault\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">");
         sb.append("<span class=\"navbar-toggler-icon\"></span>");
         sb.append("</button>");
         sb.append("<div class=\"collapse navbar-collapse\" id=\"navbarColor01\">");
         sb.append("<ul class=\"navbar-nav mr-auto\">");
         sb.append("<li class=\"nav-item active\">");
-        sb.append("<a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>");
+        sb.append("<a class=\"nav-link\" href=\"/\">Home <span class=\"sr-only\">(current)</span></a>");
         sb.append("</li>");
         sb.append("<li class=\"nav-item\">");
         sb.append("<a class=\"nav-link\" href=\"#\">Contact Us</a>");
@@ -61,11 +61,11 @@ public class Contact extends HttpServlet {
         sb.append("<legend>Customer Contact Form</legend>");
 
         // First check if the error message exists
-        Object objCheckError = request.getAttribute("errMsgs");
+        Object objCheckError = request.getAttribute("errorMsg");
         if(objCheckError != null) {
-            String errorMsgs = (String) objCheckError;
+            String errorMsg = (String) objCheckError;
             sb.append("<div><p>");
-            sb.append(errorMsgs);
+            sb.append(errorMsg);
             sb.append("</p></div>");
         }
 
